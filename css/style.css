@@ -21,19 +21,23 @@ input:hover{
 	border: none;
 }
 
+
 /* _____________ Mobil _____________*/
 
 .mobil-block {
+	position: relative;
 	display: none;
 }
-
 /* Header*/
-.header-top-mobil {
+.header-top-mobil {	
 	position: fixed;
 	width: 100vw;
 	min-height: 60px;
 	z-index: 10;
 	background-color: #f6f6f6;
+}
+.nav-mobil-relative {
+	position: relative;
 }
 .header-top-mobil .mobil-icon {
 	width: calc((100% - 20px) / 5);
@@ -151,6 +155,7 @@ input:hover{
  *	Message
  */
 .message {
+
 	margin-top: -31px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid #d7dcd7;
@@ -160,6 +165,8 @@ input:hover{
  *	Navigation
  */
 .navigation-left {
+	position: absolute;
+	left: 0;
 	padding-top: 10px; 
 	background-color: #fff;
 	border-radius: 0 0 8px 0;
@@ -224,7 +231,7 @@ input:hover{
 	padding: 0 25px 0 25px;
 }
 .block-yet-plants {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 .list .arrow-slide {
 	transition: opacity .3s linear;

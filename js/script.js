@@ -53,4 +53,7 @@ $(document).ready(function(){
     variableWidth: true,
     waitForAnimate: false,
   });
+  $(".navbar-toggler").on("click", function(){
+        $(".header-top-mobil").toggleClass("nav-mobil-relative")
+  });
 });
