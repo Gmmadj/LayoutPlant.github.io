@@ -28,6 +28,9 @@ input:hover{
 	position: relative;
 	display: none;
 }
+.nav-mobil {
+	padding-bottom: 50px; 
+}
 /* Header*/
 .header-top-mobil {	
 	position: fixed;
