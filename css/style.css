@@ -264,7 +264,8 @@ input:hover{
 }
 .card-carousel {
 	width: 200px;
-	margin-right: 15px;
+	margin-right: 5px;
+	margin-left: 5px;
 } 
 .card img {
 	height: 150px;
@@ -530,7 +531,7 @@ input:hover{
 	left: 0;
 }
 .slaide .next, .slaide .next-2, .slaide .next-news {
-	right: 15px;
+	right: 0;
 }
 
 /* ============= End SLick Slider =============*/
