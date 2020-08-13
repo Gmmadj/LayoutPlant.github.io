@@ -1,0 +1,537 @@
+body {
+	background-color: #F0FFF0;
+	color: #081305;
+	font-size: 14px;
+}
+a {
+	color: #081305;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+input {
+	border: none;
+}
+input:hover{
+	outline: none;
+	border: none;
+}
+
+/* _____________ Mobil _____________*/
+
+.mobil-block {
+	display: none;
+}
+
+/* Header*/
+.header-top-mobil {
+	position: fixed;
+	width: 100vw;
+	min-height: 60px;
+	z-index: 10;
+	background-color: #f6f6f6;
+}
+.header-top-mobil .mobil-icon {
+	width: calc((100% - 20px) / 5);
+	text-align: center;
+	height: 60px;
+	display: inline-block;
+	padding-top: 15px;
+}
+.header-top-mobil .btn-mobil.active {
+	color: #508a50;
+}
+
+/* _____________ End Mobil _____________*/
+
+
+/* _____________ Header _____________*/
+
+.header {
+	margin-bottom: 20px;
+}
+
+/*
+ *	Header top
+ */
+.header-top {
+	background-color: #84a02b;
+	height: 33px;
+}
+.header-top .nav-link {
+	font-size: 16px;
+	line-height: 1;
+	color: #fff;
+}
+.header-top .nav-link:first-child {
+	padding-left: 0;
+}
+.header-top .nav-link:hover {
+	color: #395112;
+}
+.header-top .phone-number {
+	float: right;
+}
+.header-top .phone-link {
+	padding: 0;
+	font-weight: bold;
+}
+
+/*
+ *	Header area
+ */
+.header-area {
+	padding: 5px 0 5px 0;
+	background-color: #fff;
+	border-bottom: 1px solid #d7dcd7;
+	border-radius: 0 0 8px 0
+}
+.logo {
+	font-size: 16px;
+}
+/* search */
+.header-area .search .form-new{
+	position: relative;
+	width: 100%;
+  	height: 50px;
+  	padding-left: 10px;
+  	border-radius: 5px;
+  	background: #e3e4e5;
+  	transition: .2s;
+  	font-size: 16px;
+}
+.header-area .search .icon-input {
+	position: absolute; 
+  	top: 0;
+  	right: 15px;
+  	width: 42px;
+  	height: 50px;
+  	border: none;
+  	background: #e3e4e5;
+  	border-radius: 0 5px 5px 0;
+  	cursor: pointer;
+  	transition: .3s
+}
+.header-area .search .form-new:focus {
+	background: #f3f4f2;
+}
+
+.header-area .search .icon-input:hover {
+	opacity: 0.7;
+}
+/* button */
+.header-area .icon-button {
+	padding-left: 3px;
+}
+.btn-top {
+	padding: 12px 5px;
+	font-size: 15px;
+	background: #e3e4e5;
+}
+.btn-top:hover {
+	background: #f3f4f2;
+}
+.login {
+	float: right;
+}
+
+/* _____________ End Header _____________*/
+
+/* _____________ Main _____________ */
+
+.main {
+	margin-top: 30px;
+}
+
+/*
+ *	Message
+ */
+.message {
+	margin-top: -31px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d7dcd7;
+}
+
+/*
+ *	Navigation
+ */
+.navigation-left {
+	padding-top: 10px; 
+	background-color: #fff;
+	border-radius: 0 0 8px 0;
+	margin-left: auto;
+	margin-top: -31px;
+	border-right: 1px solid #d7dcd7;
+	border-bottom: 1px solid #d7dcd7;
+} 
+
+/* nav column */
+.nav-column {
+	padding-top: 20px;
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 10px;
+	min-height: 50%;
+} 
+.nav-column .nav {
+	width: 100%
+}
+
+/* nav item main*/
+.nav-item-main {
+	background-color: #2d4a1a ;
+}
+.nav-item-main .nav-link {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+}
+
+/* nav item*/
+.nav-column .nav-item {
+	position: relative;
+  	align-self: stretch;
+  	flex-grow: 1;	
+}
+.nav-column .nav-item:last-child {
+	border-bottom: none;
+}
+.nav-column .nav-link {
+	height: 100%;
+	transition: .2s linear;
+}
+.nav-column .nav-item .nav-link:hover {
+	background-color: #b7c656;
+	color: #000;
+}
+
+
+/*
+ *	Block plants
+ */ 
+.block {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	border: 1px solid #d7dcd7;
+	margin-bottom: 30px
+}
+.slaide-padding {
+	padding: 0 25px 0 25px;
+}
+.block-yet-plants {
+	margin-top: 20px;
+}
+.list .arrow-slide {
+	transition: opacity .3s linear;
+}
+
+.block-name-slaider {
+	margin-bottom: 15px;
+	padding-left: 45px;
+	font-size: 24px;
+}
+.block-name {
+	margin-bottom: 15px;
+	padding-left: 30px;
+	font-size: 24px;
+}
+.block-list-line {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+
+/*
+ *	Card
+ */
+/* card product*/
+.card {
+	max-height: 400px;
+	border: none;
+}
+.card-new {
+	width: calc((100% - 120px) / 6);
+	margin: 0 10px 0 10px;
+}
+.card-carousel .card-body {
+	padding-left: 0;
+	float: left;
+}
+.card-carousel {
+	width: 200px;
+	margin-right: 15px;
+	margin-left: 15px;
+} 
+.card img {
+	height: 150px;
+	object-fit: cover;
+}
+.card img:hover {
+	opacity: 0.8;
+}
+.card-title a:hover {
+	text-decoration: none;
+	color: #395112;
+}
+.card-price {
+	padding: 5px;
+	text-align: left;
+	font-size: 20px;
+	background-color: #B5F36D;
+	border-radius: 8px;
+}
+
+/* card news*/
+.card-news {
+	width: 500px;
+	margin: 0 10px 0 10px;
+}
+.card-news img {
+	object-fit: cover;
+}
+
+/*
+ *	Btn
+ */
+.btn-main {
+	background-color: #96b530;
+	border-color: #96b530;
+	padding: 15px 40px;
+	font-size: 20px;
+}
+
+.btn-main:hover {
+	background-color: #84a02b;
+	border-color: #84a02b;
+}
+.btn-yet {
+	display: block;
+	margin: 30px auto 0 auto;
+}
+
+/*
+ *	Block list
+ */
+.block-list-line {
+	
+}
+
+/* _____________ End Main _____________ */
+
+/* _____________ Footer _____________ */
+
+.footer {
+	padding: 30px 0 10px 0;
+	background-color: #794;
+}
+
+.nav-footer .nav-link:hover {
+	color: #fff;
+}
+.nav-footer .hide {
+    display: none; 
+}
+
+.nav-footer label {
+	position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-left: 15px;
+}
+.nav-footer label .icon-label {
+	display: none;
+}
+
+
+
+
+/* _____________ End Footer _____________*/
+
+/* ============= Media 996 ============= */
+
+@media (max-width: 996px) {
+
+/* _____________ Header _____________*/
+
+	.header-area {
+		padding-top: 70px;
+	}
+	.header-top, .no-mobil {
+		display: none;
+	}
+	.mobil-block {
+		display: inline-block;
+	}
+	.header-area .mobil {
+		color: #000;
+		font-weight: bold;
+		float: right;
+	}
+	.header-area .search{
+		margin-top: 20px; 
+	}
+	.header-area .search .icon-input {
+		top: 20px;
+	}
+
+/* _____________ End Header _____________ */
+
+/* _____________ Main _____________ */ 
+
+.card-new {
+	width: calc((100% - 80px) / 4);
+	margin: 0 10px 0 10px;
+}
+
+.navigation-left {
+	display: none;
+}
+
+/* _____________ End Main _____________ */
+
+/* _____________ Footer _____________ */
+
+	.nav-footer .hide + label ~ ul {
+		display: none;
+	}
+	.nav-footer label .icon-label {
+		display: inline-block;
+		position: absolute;
+		top: 0%;
+		right: 10px;
+	}
+	.nav-footer .hide:checked + .nav-item {
+		display: block;
+	}
+	.nav-footer .hide:checked + label {
+	    color: #fff;
+	    border-bottom: 0;
+	}
+	.nav-footer .hide:checked + label .icon-label {
+		transform: rotate(180deg);
+		margin-top: 10px;
+	}
+
+	.nav-footer .hide:checked + label + ul {
+	    display: block;  
+	    opacity: 1;
+	}
+
+/* _____________ End Footer _____________*/
+
+}
+
+/* ============= End Media 996 ============= */
+
+/* ============= Media 768 ============= */
+
+@media (max-width: 768px) {
+	.card-new {
+		width: calc((100% - 60px) / 3);
+		margin: 0 10px 0 10px;
+	}
+	.block {
+		margin-bottom: 20px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.slaide-padding {
+		padding: 0;
+	}
+	.block-name-slaider {
+		padding-left: 20px;
+	}
+}
+
+/* ============= End Media 768 ============= */
+
+/* ============= Media 576 ============= */
+
+@media (max-width: 576px) {
+	.card-new {
+		width: calc((100% - 20px) / 2);
+		margin: 0 5px 0 5px;
+	}
+	.block {
+		margin-bottom: 20px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.card-news {
+		width: 350px;
+	}
+}
+
+/* ============= End Media 576 ============= */
+
+/* ============= Media 400 ============= */
+
+@media (max-width: 400px) {
+	.card-new {
+		width: calc((100% - 20px) / 2);
+		margin: 0 5px 0 5px;
+	}
+	.block {
+		margin-bottom: 20px;
+		padding: 10px 5px 10px 5px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.card-news {
+		width: 250px;
+	}
+}
+
+/* ============= End Media 400 ============= */
+
+
+
+/* ============= SLick Slider ============= */
+
+.slick-list {
+ 	overflow: hidden;
+ }
+.slick-track {
+	display: flex;
+}
+.slaide {
+	position: relative;
+	transition: .3s linear;
+}
+.slaide:hover .arrow-slide {
+	opacity: 0.8;
+}
+.slaide .arrow-slide {
+	position: absolute;
+	top: 50%;
+	margin: -25px 0 0 0;
+	z-index: 10;
+	opacity: 0;
+	transition: .3s linear;
+}
+.slaide .arrow-slide:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.slaide .prev, .slaide .prev-2, .slaide .prev-news{
+	left: 0;
+}
+.slaide .next, .slaide .next-2, .slaide .next-news {
+	right: 0;
+}
+
+/* ============= End SLick Slider =============*/
