@@ -4,6 +4,7 @@ $(document).ready(function(){
     nextArrow: $('.next'),
     slidesToShow: 4,
     slidesToScroll: 3,
+    waitForAnimate: false,
     responsive: [
       {
         breakpoint: 996,
@@ -14,8 +15,9 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           variableWidth: true,
-          slidesToShow: 3,
-          slidesToScroll: 2
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 1
         },
       }
     ]
@@ -25,6 +27,7 @@ $(document).ready(function(){
     nextArrow: $('.next-2'),
     slidesToShow: 4,
     slidesToScroll: 3,
+    waitForAnimate: false,
      responsive: [
       {
         breakpoint: 996,
@@ -34,9 +37,10 @@ $(document).ready(function(){
         },
         breakpoint: 768,
         settings: {
+          centerMode: true,
           variableWidth: true,
-          slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToShow: 2,
+          slidesToScroll: 1
         },
       }
     ]
@@ -47,5 +51,6 @@ $(document).ready(function(){
     slidesToShow: 2,
     slidesToScroll: 1,
     variableWidth: true,
+    waitForAnimate: false,
   });
 });
