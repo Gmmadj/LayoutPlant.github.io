@@ -6,11 +6,17 @@ $(document).ready(function(){
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1100,
+        breakpoint: 996,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2
-        }
+        },
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 3,
+          slidesToScroll: 2
+        },
       }
     ]
   });
@@ -19,15 +25,21 @@ $(document).ready(function(){
     nextArrow: $('.next-2'),
     slidesToShow: 4,
     slidesToScroll: 3,
-    responsive: [
+     responsive: [
       {
-        breakpoint: 1100,
+        breakpoint: 996,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2
-        }
+        },
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 3,
+          slidesToScroll: 2
+        },
       }
-    ],
+    ]
   });
   $('.slaider-news').slick({
     prevArrow: $('.prev-news'),

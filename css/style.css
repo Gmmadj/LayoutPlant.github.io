@@ -21,16 +21,38 @@ input:hover{
 	border: none;
 }
 
-.container-new {
-	width: 90vw;
-	margin: 0 auto;
+/* _____________ Mobil _____________*/
+
+.mobil-block {
+	display: none;
 }
+
+/* Header*/
+.header-top-mobil {
+	position: fixed;
+	width: 100vw;
+	min-height: 60px;
+	z-index: 10;
+	background-color: #f6f6f6;
+}
+.header-top-mobil .mobil-icon {
+	width: calc((100% - 20px) / 5);
+	text-align: center;
+	height: 60px;
+	display: inline-block;
+	padding-top: 15px;
+}
+.header-top-mobil .btn-mobil.active {
+	color: #508a50;
+}
+
+/* _____________ End Mobil _____________*/
+
 
 /* _____________ Header _____________*/
 
 .header {
 	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /*
@@ -64,8 +86,9 @@ input:hover{
  */
 .header-area {
 	padding: 5px 0 5px 0;
-	border-bottom: 1px solid #91c27d;
 	background-color: #fff;
+	border-bottom: 1px solid #d7dcd7;
+	border-radius: 0 0 8px 0
 }
 .logo {
 	font-size: 16px;
@@ -73,7 +96,7 @@ input:hover{
 /* search */
 .header-area .search .form-new{
 	position: relative;
-	width: 95%;
+	width: 100%;
   	height: 50px;
   	padding-left: 10px;
   	border-radius: 5px;
@@ -84,7 +107,7 @@ input:hover{
 .header-area .search .icon-input {
 	position: absolute; 
   	top: 0;
-  	right: 0px;
+  	right: 15px;
   	width: 42px;
   	height: 50px;
   	border: none;
@@ -106,7 +129,7 @@ input:hover{
 }
 .btn-top {
 	padding: 12px 5px;
-	font-size: 14px;
+	font-size: 15px;
 	background: #e3e4e5;
 }
 .btn-top:hover {
@@ -121,23 +144,36 @@ input:hover{
 /* _____________ Main _____________ */
 
 .main {
-	margin-top: 30px
+	margin-top: 30px;
+}
+
+/*
+ *	Message
+ */
+.message {
+	margin-top: -31px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d7dcd7;
 }
 
 /*
  *	Navigation
  */
 .navigation-left {
+	padding-top: 10px; 
 	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	border-radius: 0 0 8px 0;
+	margin-left: auto;
+	margin-top: -31px;
+	border-right: 1px solid #d7dcd7;
+	border-bottom: 1px solid #d7dcd7;
 } 
 
 /* nav column */
 .nav-column {
+	padding-top: 20px;
 	display: flex;
 	background-color: #fff;
-	border-radius: 8px;
 	margin-bottom: 10px;
 	min-height: 50%;
 } 
@@ -147,18 +183,16 @@ input:hover{
 
 /* nav item main*/
 .nav-item-main {
-	text-transform: uppercase;
-	font-size: 18px;
-	background-color: #395112;
-	border-radius: 8px;
+	background-color: #2d4a1a ;
 }
 .nav-item-main .nav-link {
+	text-transform: uppercase;
+	font-size: 18px;
 	color: #fff;
 }
 
 /* nav item*/
 .nav-column .nav-item {
-	border-bottom: 1px solid #395112;
 	position: relative;
   	align-self: stretch;
   	flex-grow: 1;	
@@ -183,19 +217,27 @@ input:hover{
 	background-color: #fff;
 	border-radius: 8px;
 	padding: 20px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	border: 1px solid #d7dcd7;
 	margin-bottom: 30px
 }
+.slaide-padding {
+	padding: 0 25px 0 25px;
+}
 .block-yet-plants {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .list .arrow-slide {
 	transition: opacity .3s linear;
 }
 
+.block-name-slaider {
+	margin-bottom: 15px;
+	padding-left: 45px;
+	font-size: 24px;
+}
 .block-name {
 	margin-bottom: 15px;
-	text-align: center;
+	padding-left: 30px;
 	font-size: 24px;
 }
 .block-list-line {
@@ -213,7 +255,7 @@ input:hover{
 	border: none;
 }
 .card-new {
-	width: calc((100% - 100px) / 5);
+	width: calc((100% - 120px) / 6);
 	margin: 0 10px 0 10px;
 }
 .card-carousel .card-body {
@@ -268,7 +310,7 @@ input:hover{
 }
 .btn-yet {
 	display: block;
-	margin: 0 auto;
+	margin: 30px auto 0 auto;
 }
 
 /*
@@ -287,23 +329,186 @@ input:hover{
 	background-color: #794;
 }
 
+.nav-footer .nav-link:hover {
+	color: #fff;
+}
+.nav-footer .hide {
+    display: none; 
+}
+
+.nav-footer label {
+	position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-left: 15px;
+}
+.nav-footer label .icon-label {
+	display: none;
+}
+
+
+
+
 /* _____________ End Footer _____________*/
 
-/* _____________ SLick Slider _____________ */
+/* ============= Media 996 ============= */
+
+@media (max-width: 996px) {
+
+/* _____________ Header _____________*/
+
+	.header-area {
+		padding-top: 70px;
+	}
+	.header-top, .no-mobil {
+		display: none;
+	}
+	.mobil-block {
+		display: inline-block;
+	}
+	.header-area .mobil {
+		color: #000;
+		font-weight: bold;
+		float: right;
+	}
+	.header-area .search{
+		margin-top: 20px; 
+	}
+	.header-area .search .icon-input {
+		top: 20px;
+	}
+
+/* _____________ End Header _____________ */
+
+/* _____________ Main _____________ */ 
+
+.card-new {
+	width: calc((100% - 80px) / 4);
+	margin: 0 10px 0 10px;
+}
+
+.navigation-left {
+	display: none;
+}
+
+/* _____________ End Main _____________ */
+
+/* _____________ Footer _____________ */
+
+	.nav-footer .hide + label ~ ul {
+		display: none;
+	}
+	.nav-footer label .icon-label {
+		display: inline-block;
+		position: absolute;
+		top: 0%;
+		right: 10px;
+	}
+	.nav-footer .hide:checked + .nav-item {
+		display: block;
+	}
+	.nav-footer .hide:checked + label {
+	    color: #fff;
+	    border-bottom: 0;
+	}
+	.nav-footer .hide:checked + label .icon-label {
+		transform: rotate(180deg);
+		margin-top: 10px;
+	}
+
+	.nav-footer .hide:checked + label + ul {
+	    display: block;  
+	    opacity: 1;
+	}
+
+/* _____________ End Footer _____________*/
+
+}
+
+/* ============= End Media 996 ============= */
+
+/* ============= Media 768 ============= */
+
+@media (max-width: 768px) {
+	.card-new {
+		width: calc((100% - 60px) / 3);
+		margin: 0 10px 0 10px;
+	}
+	.block {
+		margin-bottom: 20px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.slaide-padding {
+		padding: 0;
+	}
+	.block-name-slaider {
+		padding-left: 20px;
+	}
+}
+
+/* ============= End Media 768 ============= */
+
+/* ============= Media 576 ============= */
+
+@media (max-width: 576px) {
+	.card-new {
+		width: calc((100% - 20px) / 2);
+		margin: 0 5px 0 5px;
+	}
+	.block {
+		margin-bottom: 20px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.card-news {
+		width: 350px;
+	}
+}
+
+/* ============= End Media 576 ============= */
+
+/* ============= Media 400 ============= */
+
+@media (max-width: 400px) {
+	.card-new {
+		width: calc((100% - 20px) / 2);
+		margin: 0 5px 0 5px;
+	}
+	.block {
+		margin-bottom: 20px;
+		padding: 10px 5px 10px 5px;
+	}
+	.block-name-slaider, .block-name {
+		margin-bottom: 10px;
+	}
+	.card-news {
+		width: 250px;
+	}
+}
+
+/* ============= End Media 400 ============= */
+
+
+
+/* ============= SLick Slider ============= */
 
 .slick-list {
  	overflow: hidden;
  }
 .slick-track {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 }
 .slaide {
 	position: relative;
-	padding: 0 25px 0 25px;
 	transition: .3s linear;
 }
 .slaide:hover .arrow-slide {
@@ -328,4 +533,4 @@ input:hover{
 	right: 15px;
 }
 
-/* _____________ End SLick Slider _____________*/
+/* ============= End SLick Slider =============*/
