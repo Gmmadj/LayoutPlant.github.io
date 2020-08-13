@@ -29,7 +29,7 @@ input:hover{
 	display: none;
 }
 .nav-mobil {
-	padding-bottom: 50px; 
+	padding-bottom: 5px; 
 }
 /* Header*/
 .header-top-mobil {	
@@ -41,6 +41,12 @@ input:hover{
 }
 .nav-mobil-relative {
 	position: relative;
+}
+.navbar-toggler {
+	cursor: pointer;
+}
+.navbar-toggler:active {
+	color: #508a50;
 }
 .header-top-mobil .mobil-icon {
 	width: calc((100% - 20px) / 5);
