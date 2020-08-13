@@ -15,6 +15,7 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           variableWidth: true,
+          centerMode: true,
           slidesToShow: 2,
           slidesToScroll: 1
         },
@@ -36,6 +37,7 @@ $(document).ready(function(){
         },
         breakpoint: 768,
         settings: {
+          centerMode: true,
           variableWidth: true,
           slidesToShow: 3,
           slidesToScroll: 2
