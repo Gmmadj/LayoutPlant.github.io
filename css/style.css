@@ -256,11 +256,10 @@ input:hover{
 }
 .card-new {
 	width: calc((100% - 120px) / 6);
-	margin: 0 10px 0 10px;
+	margin: 0 10px 25px 10px;
 }
-.card-carousel .card-body {
-	padding-left: 0;
-	float: left;
+.card .card-body {
+	padding: 0;
 }
 .card-carousel {
 	width: 200px;
@@ -274,16 +273,29 @@ input:hover{
 .card img:hover {
 	opacity: 0.8;
 }
+.card-title {
+	padding-top: 5px;
+	font-size: 16px;
+	margin-bottom: 0;
+}
 .card-title a:hover {
 	text-decoration: none;
 	color: #395112;
 }
 .card-price {
-	padding: 5px;
+	float: left;
 	text-align: left;
-	font-size: 20px;
-	background-color: #B5F36D;
-	border-radius: 8px;
+	font-size: 18px;
+}
+.card-body .card-icons {
+	display: inline-block;
+	float: right;
+}
+.card-body .card-icon {
+	padding-left: 3px;
+}
+.card-body .active {
+	color: #508a50;
 }
 
 /* card news*/
@@ -391,7 +403,7 @@ input:hover{
 
 .card-new {
 	width: calc((100% - 80px) / 4);
-	margin: 0 10px 0 10px;
+	margin: 0 10px 20px 10px;
 }
 
 .navigation-left {
@@ -439,7 +451,7 @@ input:hover{
 @media (max-width: 768px) {
 	.card-new {
 		width: calc((100% - 60px) / 3);
-		margin: 0 10px 0 10px;
+		margin: 0 10px 15px 10px;
 	}
 	.block {
 		margin-bottom: 20px;
@@ -462,7 +474,7 @@ input:hover{
 @media (max-width: 576px) {
 	.card-new {
 		width: calc((100% - 20px) / 2);
-		margin: 0 5px 0 5px;
+		margin: 0 5px 10px 5px;
 	}
 	.block {
 		margin-bottom: 20px;
@@ -480,10 +492,6 @@ input:hover{
 /* ============= Media 400 ============= */
 
 @media (max-width: 400px) {
-	.card-new {
-		width: calc((100% - 20px) / 2);
-		margin: 0 5px 0 5px;
-	}
 	.block {
 		margin-bottom: 20px;
 		padding: 10px 5px 10px 5px;
