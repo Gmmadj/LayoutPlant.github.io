@@ -55,6 +55,7 @@ $(document).ready(function(){
   });
   $(".navbar-toggler").on("click", function(){
         $(".header-top-mobil").toggleClass("nav-mobil-relative");
+        $(".navbar-toggler").toggleClass("active");
         $('body,html').animate({scrollTop:0},800);
   });
 });
