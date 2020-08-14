@@ -583,7 +583,6 @@ input:hover{
 	}
 	.nav-footer .hide:checked + label .icon-label {
 		transform: rotate(180deg);
-		margin-top: 10px;
 	}
 
 	.nav-footer .hide:checked + label + ul {
