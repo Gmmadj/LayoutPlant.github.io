@@ -128,16 +128,16 @@ input:hover{
 	padding-top: 15px;
 }
 .header-top-mobil .btn-mobil.active{
-	color: #8AB32D;
+	color: #b4e83e;
 }
 .btn-mobil svg:hover {
-	color: #8AB32D;
+	color: #b4e83e;
 }
 .navbar-toggler svg:hover {
-	color: #8AB32D;
+	color: #b4e83e;
 }
 .navbar-toggler.active svg {
-	color: #8AB32D;
+	color: #b4e83e;
 }
 
 
@@ -253,9 +253,12 @@ input:hover{
  */
 .message {
 	width: 100%;
-	background-color: #FFC500;
-	color: #494b49;
+	background-color: #ffed42;
+	color: #000;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16);
+}
+.message .close {
+	padding: 0.5rem 1.25rem;
 }
 
 /*
@@ -289,6 +292,7 @@ input:hover{
 .nav-item-main .nav-link {
 	text-transform: uppercase;
 	font-size: 16px;
+	font-weight: 700;
 	color: #fff;
 }
 
@@ -302,12 +306,13 @@ input:hover{
 	border-bottom: none;
 }
 .nav-column .nav-link {
+	font-weight: 600;
 	height: 100%;
 	transition: .2s linear;
 }
 .nav-column .nav-item .nav-link:hover {
-	background-color: #BEF73E;
-	color: #000;
+	background-color: #b4e83e;
+	color: #fff;
 }
 
 
@@ -416,10 +421,10 @@ input:hover{
 	width: 30px;
 }
 .card-icon a svg:hover {
-	color: #8AB32D;
+	color: #b4e83e;
 }
 .card-body .active {
-	color: #8AB32D;
+	color: #b4e83e;
 }
 
 /* card news*/
@@ -437,15 +442,17 @@ input:hover{
  *	Btn
  */
 .btn-main {
-	background-color: #8AB32D;
-	border-color: #8AB32D;
+	background-color: #b4e83e;
+	border: 2px solid #b4e83e;
 	padding: 15px 40px;
 	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
 }
 
 .btn-main:hover {
-	background-color: #BEF73E;
-	border-color: #BEF73E;
+	background-color: #fff;
+	color: #b4e83e;
 }
 .btn-yet {
 	display: block;
@@ -477,7 +484,7 @@ input:hover{
 	padding: 4px 16px;
 }
 .nav-footer .nav-link:hover {
-	color: #BEF73E;
+	color: #b4e83e;
 }
 .nav-footer .hide {
     display: none; 
@@ -571,7 +578,7 @@ input:hover{
 		display: block;
 	}
 	.nav-footer .hide:checked + label {
-	    color: #BEF73E;
+	    color: #b4e83e;
 	    border-bottom: 0;
 	}
 	.nav-footer .hide:checked + label .icon-label {
