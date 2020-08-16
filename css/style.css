@@ -172,7 +172,7 @@ input:hover{
 	color: #90b145;
 }
 .filter-mobil {
-	position: static;
+	position: relative;
 	display: none;
 }
 
