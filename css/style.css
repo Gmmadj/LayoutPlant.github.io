@@ -171,6 +171,9 @@ input:hover{
 .navbar-toggler.active svg {
 	color: #90b145;
 }
+.filter-mobil {
+	display: none;
+}
 
 
 /* _____________ End Mobil _____________*/
@@ -206,6 +209,7 @@ input:hover{
 	float: right;
 }
 .header-top .phone-link {
+	font-family: 'Montserrat'; 
 	padding: 0;
 	font-weight: 600;
 }
@@ -224,6 +228,43 @@ input:hover{
 	line-height: 1.2;
 	color: #416e41;
 }
+.dropdown-menu-changes {
+	width: 260px;
+	border-radius: none;
+	padding: none;
+	left: auto !important;
+	right: 90px !important;
+}
+.btn-main {
+	 display: inline-block;
+	 font-size: 16px;
+	 color: #fff;
+	 font-weight: 600;
+	 text-decoration: none;
+	 padding: .5em 2em;
+	 outline: none;
+	 border-width: 2px 0;
+	 border-style: solid none;
+	 border-color: #90b145 #000 #86a442;
+	 border-radius: 6px;
+	 background: linear-gradient(#a1c54d, #86a540) #86a540;
+	 transition: 0.2s;
+}
+.btn-main:hover {
+	 background: linear-gradient(#90b145, #93b546) #93b546;
+	 color: #fff;
+}
+.btn-main:active {
+	 background: linear-gradient(#90b145, #93b546) #93b546;
+	 outline: none;
+}
+.btn-main:focus {
+	box-shadow: none;
+}
+.dropdown .show > .btn-catalog {
+	border-color: none;
+}
+
 /* search */
 .header-area .search .form-new{
 	position: relative;
@@ -253,34 +294,34 @@ input:hover{
 	opacity: 0.7;
 }
 /* button */
-.btn-top {
-	padding: 8px 5px;	
-	font-size: 15px;
-	font-weight: 400;
+.btn-top:focus {
+	box-shadow: none;
+}
+.login .btn-top {
+	padding: 8px 10px;	
+	font-size: 16px;
+	font-weight: 500;
 }
 .btn-icon-top {
 	position: relative;
-	padding: 8px 5px 8px 25px;
+	padding: 8px 5px 8px 35px;
 	border-radius: 0;
 }
+.btn-icon-top:hover {
+	background-color: #fff;
+}
 .btn-icon-top svg {
-	color: #989898;
+	width: 25px;
+	height: 25px;
+	color: #cecece;
+}
+.btn-icon-top:hover svg, .btn-icon-top:hover {
+	color: #90b145;
 }
 .header-area .icon-button {
 	position: absolute;
 	left: 5px;
 	top: 6px;
-}
-.btn-top:hover {
-	background-color: #fff;
-	color: #90b145;
-}
-.login {
-	float: right;
-}
-.login .btn-main {
-	padding: 5px 12px;
-	font-size: 16px;
 }
 
 /* _____________ End Header _____________*/
@@ -314,12 +355,11 @@ input:hover{
 	background-color: #fff;
 	margin-left: 15px;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16);
-	height: 812px;
+	height: 750px;
 } 
 
 /* nav column */
 .nav-column {
-	display: flex;
 	background-color: #fff;
 	min-height: 50%;
 } 
@@ -347,7 +387,7 @@ input:hover{
 	border-bottom: none;
 }
 .nav-column .nav-item .nav-link {
-	font-weight: 600;
+	font-weight: 500;
 	height: 100%;
 	font-size: 16px;
 	transition: .2s linear;
@@ -357,6 +397,134 @@ input:hover{
 	color: #90b145;
 }
 
+/*
+ *	Filter
+ */
+ .filter .filter-block{
+ 	padding: 1rem 1rem 0 1rem;
+ }
+ .filter .nav-item-main {
+ 	text-transform: uppercase;
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	padding: 1rem 1rem;
+}
+.filter .filter-item-main {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.filter .filter-radio {
+	 position: relative;
+}
+.filter .filter-content {
+	padding-left: 22px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.filter .filter-radio .radio {
+	-webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем стандартные кружочки */
+    position: absolute;
+
+}
+.filter .filter-radio .filter-content::before {
+	content: "";
+    display: block; 
+    width: 18px; 
+    height: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    border-radius: 50%;
+    position: absolute;
+    top: 3px; 
+    left: 0;
+    z-index: 1; 
+    transition: border .1s linear;
+}
+.filter .filter-radio .filter-content::after {
+	content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0; 
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 2;
+    transition: opacity .1s linear; 
+
+}
+.filter .filter-radio .radio:checked + .filter-content::before {
+	border-color: #90b145;
+	background-color: #90b145;
+}
+.filter .filter-radio .radio:checked + .filter-content::after {
+	opacity: 1;
+}
+.filter .price {
+	display: inline-block;
+	width: 49%;
+}
+.filter .price:hover{
+	border: 1px solid #ced4da;
+}
+.filter .price:focus {
+	box-shadow: none;
+	border: 1px solid #ced4da;
+}
+.filter .filter-checkbox {
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+}
+.filter .filter-checkbox input[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.filter .filter-checkbox span {
+	position: relative; 
+}
+.filter .filter-checkbox span:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: background 0.3s ease;
+	border: 1px solid #ced4da;
+}
+.filter .filter-checkbox span::after {
+	content: "";
+	background: url(../img/svg/check.svg) 0 0 no-repeat; 
+    display: block;
+    width: 18px;
+    height: 18px;
+    opacity: 0; 
+    position: absolute;
+    top: 0;
+    left: 1px;
+    z-index: 2;
+    transition: opacity .1s linear;
+}
+ 
+/* Checked */
+.filter .filter-checkbox input[type=checkbox]:checked + span::before {
+	background-color: #90b145;
+}
+.filter .filter-checkbox input[type=checkbox]:checked + span::after {
+	opacity: 1;
+}
 
 /*
  *	Block plants
@@ -485,19 +653,13 @@ input:hover{
 /*
  *	Btn
  */
-.btn-main {
-	background-color: #90b145;
-	border: 2px solid #90b145;
+.btn-main-large {
 	padding: 15px 40px;
 	font-size: 20px;
 	font-weight: 600;
 	color: #fff;
 }
 
-.btn-main:hover {
-	background-color: #fff;
-	color: #90b145;
-}
 .btn-yet {
 	display: block;
 	margin: 30px auto 0 auto;
@@ -552,6 +714,7 @@ input:hover{
 	display: none;
 }
 .footer .footer-info p {
+	font-family: 'Montserrat'; 
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -564,6 +727,10 @@ input:hover{
 /* ============= Media 1200 ============= */
 
 @media (max-width: 1200px) {
+	.dropdown-menu-changes {
+		width: 220px;
+		right: 70px !important;
+	}
 	.navigation-left {
 		height: 850px;
 	}
@@ -576,7 +743,7 @@ input:hover{
 
 /* ============= Media 996 ============= */
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
 
 /* _____________ Header _____________*/
 
@@ -590,6 +757,7 @@ input:hover{
 		display: inline-block;
 	}
 	.header-area .mobil {
+		font-family: 'Montserrat'; 
 		color: #000;
 		font-weight: bold;
 		float: right;
@@ -612,6 +780,16 @@ input:hover{
 
 .navigation-left {
 	display: none;
+}
+.filter-mobil {
+	margin-bottom: 30px;
+	display: block;
+}
+.filter-mobil .btn-main {
+	width: 100%;
+}
+body.filter-mobil.show {
+	background-color:rgba(0,0,0,.3);
 }
 
 /* _____________ End Main _____________ */
