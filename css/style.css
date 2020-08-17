@@ -1,30 +1,24 @@
 @font-face {
-	font-family: 'Raleway'; 
-	src: url(../fonts/Raleway/Raleway-Regular.ttf); 
+	font-family: 'Bitter'; 
+	src: url(../fonts/Bitter/Bitter-Regular.ttf); 
 
 	font-weight: 400;
 }
 @font-face {
-	font-family: 'Raleway'; 
-	src: url(../fonts/Raleway/Raleway-Medium.ttf); 
+	font-family: 'Bitter'; 
+	src: url(../fonts/Bitter/Bitter-Medium.ttf); 
 
 	font-weight: 500;
 }
 @font-face {
-	font-family: 'Raleway'; 
-	src: url(../fonts/Raleway/Raleway-SemiBold.ttf); 
+	font-family: 'Bitter'; 
+	src: url(../fonts/Bitter/Bitter-SemiBold.ttf); 
 
 	font-weight: 600;
 }
 @font-face {
-	font-family: 'Raleway'; 
-	src: url(../fonts/Raleway/Raleway-Bold.ttf); 
-
-	font-weight: 700;
-}
-@font-face {
-	font-family: 'Montserrat'; 
-	src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf); 
+	font-family: 'Bitter'; 
+	src: url(../fonts/Bitter/Bitter-Bold.ttf); 
 
 	font-weight: 700;
 }
@@ -33,7 +27,7 @@ body {
 	background-color: #f4f4f4;
 	color: #081305;
 	font-size: 14px;
-	font-family: 'Raleway';
+	font-family: 'Bitter';
 }
 a {
 	color: #081305;
@@ -207,8 +201,7 @@ input:hover{
 .header-top .phone-number {
 	float: right;
 }
-.header-top .phone-link {
-	font-family: 'Montserrat'; 
+.header-top .phone-link { 
 	padding: 0;
 	font-weight: 600;
 }
@@ -811,8 +804,7 @@ input:hover{
 .nav-footer label .icon-label {
 	display: none;
 }
-.footer .footer-info p {
-	font-family: 'Montserrat'; 
+.footer .footer-info p { 
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -862,7 +854,7 @@ input:hover{
 		display: inline-block;
 	}
 	.header-area .mobil {
-		font-family: 'Montserrat'; 
+ 
 		color: #000;
 		font-weight: bold;
 		float: right;
