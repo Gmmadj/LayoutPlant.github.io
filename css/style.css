@@ -356,6 +356,9 @@ input:hover{
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.16);
 	height: 750px;
 } 
+.navigation-filter {
+	height: 670px;
+}
 
 /* nav column */
 .nav-column {
@@ -539,6 +542,10 @@ input:hover{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+.continuation-block {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 .list .arrow-slide {
 	transition: opacity .3s linear;
 }
@@ -576,6 +583,10 @@ input:hover{
 .card-new {
 	width: calc((100% - 120px) / 5);
 	margin: 0 10px 25px 10px;
+}
+.block-right .card-new {
+	margin: 0 4px 25px 4px;
+	width: calc((100% - 32px) / 4);
 }
 .card .card-body {
 	padding: 0 0 0 10px;
@@ -733,8 +744,15 @@ input:hover{
 	.navigation-left {
 		height: 850px;
 	}
+	.navigation-filter {
+		height: 710px;
+	}
 	.card-new {
-		width: calc((100% - 100px) / 5);
+		width: calc((100% - 100px) / 4);
+	}
+	.block-right .card-new {
+		width: calc((100% - 60px) / 3);
+		margin: 0 10px 24px 10px;
 	}
 }
 
@@ -772,7 +790,7 @@ input:hover{
 
 /* _____________ Main _____________ */ 
 
-.card-new {
+.card-new, .block-right .card-new {
 	width: calc((100% - 80px) / 4);
 	margin: 0 10px 20px 10px;
 }
@@ -826,7 +844,7 @@ input:hover{
 /* ============= Media 768 ============= */
 
 @media (max-width: 768px) {
-	.card-new {
+	.card-new, .block-right .card-new {
 		width: calc((100% - 60px) / 3);
 		margin: 0 10px 15px 10px;
 	}
@@ -854,12 +872,16 @@ input:hover{
 /* ============= Media 576 ============= */
 
 @media (max-width: 576px) {
-	.card-new {
+	.card-new, .block-right .card-new {
 		width: calc((100% - 20px) / 2);
 		margin: 0 5px 10px 5px;
 	}
 	.block {
 		margin-bottom: 20px;
+	}
+	.block-right .block {
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 	.block-name-slaider, .block-name {
 		margin-bottom: 10px;
@@ -881,6 +903,9 @@ input:hover{
 	.block {
 		margin-bottom: 20px;
 		padding: 10px 5px 10px 5px;
+	}
+	.block-right .block {
+		padding: 20px;
 	}
 	.block-name-slaider, .block-name {
 		margin-bottom: 10px;
