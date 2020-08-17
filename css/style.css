@@ -879,10 +879,6 @@ input:hover{
 	.block {
 		margin-bottom: 20px;
 	}
-	.block-right .block {
-		padding-left: 35px;
-		padding-right: 35px;
-	}
 	.block-name-slaider, .block-name {
 		margin-bottom: 10px;
 	}
@@ -892,6 +888,10 @@ input:hover{
 	.mobil-block-nopadding {
 		padding-right: 0;
 		padding-left: 0;
+	}
+	.mobil-block-nomargin {
+		margin-right: 0;
+		margin-left: 0;
 	}
 }
 
@@ -903,9 +903,6 @@ input:hover{
 	.block {
 		margin-bottom: 20px;
 		padding: 10px 5px 10px 5px;
-	}
-	.block-right .block {
-		padding: 20px;
 	}
 	.block-name-slaider, .block-name {
 		margin-bottom: 10px;
