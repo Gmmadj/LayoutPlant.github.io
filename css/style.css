@@ -527,7 +527,95 @@ input:hover{
 .filter .filter-checkbox input[type=checkbox]:checked + span::after {
 	opacity: 1;
 }
-
+/* Product */
+.product-price {
+	padding-top: 30px;
+	float: right;
+}
+.product-name {
+	font-size: 30px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-bottom: 0;
+	padding: 0;
+}
+.product-code {
+	color: #828282;
+	margin: 0;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+.product-img {
+	height: 400px;
+	width: 600px;
+}
+.product-price .price {
+	font-size: 34px;
+	font-weight: 700;
+}
+.product-amount {
+	margin-bottom: 30px;
+}
+.btn-amount {
+	border-top: 2px solid #e6e6e6;
+	border-bottom: 2px solid #e6e6e6;
+	background-color: #fff;
+	font-size: 24px;
+	color: #828282;
+}
+.btn-amount:hover {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	color: #000;
+}
+#btn_minus {
+	border-left: 2px solid #e6e6e6;
+}
+#btn_plus {
+	border-right: 2px solid #e6e6e6;
+}
+#btn_minus:hover {
+	border-left: 2px solid #000;
+}
+#btn_plus:hover {
+	border-right: 2px solid #000;
+}
+.product-btns {
+	margin-bottom: 10px;
+	vertical-align: bottom;
+}
+.btn-product {
+	border: 2px solid #9EC24B;
+	color: #9EC24B;
+	font-weight: 600;
+	width: 220px;
+}
+.btn-product:hover {
+	border: 2px solid #9EC24B;
+	background-color: #9EC24B;
+	color: #fff;
+	font-weight: 600;
+}
+.number-amount {
+	width: 50px;
+	border-top: 2px solid #e6e6e6;
+	border-bottom: 2px solid #e6e6e6;
+	font-size: 20px;
+	text-align: center;
+	color: #828282;
+}
+.number-amount:hover, .number-amount:active, .number-amount:focus {
+	color: #000;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+.product-content {
+	margin-top: 30px;
+}
+.product-content h3 {
+	padding-left: 0;
+}
 /*
  *	Block plants
  */ 
@@ -785,6 +873,10 @@ input:hover{
 	.header-area .search .icon-input {
 		top: 20px;
 	}
+	.product-img {
+		height: 300px;
+		width: 450px;
+	}
 
 /* _____________ End Header _____________ */
 
@@ -865,6 +957,19 @@ input:hover{
 	.block-name {
 		font-size: 20px;
 	}
+	.product-img {
+		height: 200px;
+		width: 290px
+	}
+	.product-price {
+		padding-top: 0;
+	}
+	.product-amount {
+		margin-bottom: 10px;
+	}
+	.product-btns {
+		margin-bottom: 5px;
+	}
 }
 
 /* ============= End Media 768 ============= */
@@ -893,6 +998,17 @@ input:hover{
 		margin-right: 0;
 		margin-left: 0;
 	}
+	.product-img {
+		width: 100%;
+		height: 300px;
+	}
+	.product-price {
+		margin-top: 10px;
+		float: left;
+	}
+	.btn-product {
+		width: 85vw;
+	}
 }
 
 /* ============= End Media 576 ============= */
@@ -915,6 +1031,10 @@ input:hover{
 	}
 	.card-price {
 		font-size: 16px;
+	}
+	.product-img {
+		width: 100%;
+		height: 250px;
 	}
 }
 

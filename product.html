@@ -316,308 +316,79 @@
 
 		<div class="container-lg">
 			<div class="row continuation-block">
-			
-			<!-- Filter -->
-			<div class="col-lg-3 no-mobil">
-				<div class="navigation-left left-column navigation-filter">
-					<aside class="filter">
-						<form>
-							<h2 class="nav-item-main">Фильтры</h2>
-							<div class="flex-column">
-								<div class="filter-block">
-									<h3 href="#" class="filter-item-main">
-										Наличие в магазинах
-									</h3>
-									<label class="filter-item filter-radio">
-										<input type="radio" class="radio" name="presence" value="1">
-										<span class="filter-content">В наличии</span>
-									</label>
-									<label class="filter-item filter-radio">
-										<input type="radio" class="radio" name="presence" value="2" checked>
-										<span class="filter-content">В наличии и отсутствующие</span>
-									</label>
+			<!-- Message -->
+				<div class="col-lg-12 mobil-block-nopadding">
+					<div class="alert alert-warning alert-dismissible fade show message" role="alert">
+					  <strong>Сообщение!</strong> Клубника появится 4 августа 2020 года.
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+				</div>
+				<!-- End Message -->
+				<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+
+					<div class="row block-right mobil-block-nomargin">	
+
+						<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+							<h2 class="product-name">Акация белая</h2>
+							<p class="product-code">8156373</p>
+						</div>
+					
+
+						<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+							<div class="row block mobil-block-nomargin">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-12">
+									<img class="product-img" src="img/1.jpg" alt="">
 								</div>
-								<div class="filter-block">
-									<h3 class="filter-item-main">Сортировать по цене</h3>
-									<label class="filter-item filter-radio">
-										<input type="radio" class="radio" name="order" value="1">
-										<span class="filter-content">По возрастанию цены</span>
-									</label>
-									<label class="filter-item filter-radio">
-										<input type="radio" class="radio" name="order" value="2" checked>
-										<span class="filter-content">По убыванию цены</span>
-									</label>
-								</div>
-								<div class="filter-block">
-									<h3 class="filter-item-main">Цена</h3>
-									<div class="filter-item">
-										<input type="text" class="price form-control" name="fromPrice" placeholder="От 500">
-										<input type="text" class="price form-control" name="upPrice" placeholder="До 10000">
+								<div class="col-lg-5 col-md-5 col-sm-5 col-12">
+									<div class="product-price">
+										<p class="price">1500 р.</p>
+										<div class="product-amount">
+											<div class="input-group">
+											  <input class="btn-amount" type="button" value="-" id="btn_minus">
+											  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
+											  <input class="btn-amount" type="button" value="+" id="btn_plus">
+											</div>
+										</div>
+										<div class="product-btns">
+											<a href="#" type="button" class="btn btn-product">Добавить в корзину</a>
+										</div>
+										<div class="product-btns">
+											<a href="#" type="button" class="btn btn-product">Добавить в избранное</a>
+										</div>
 									</div>
 								</div>
-								<div class="filter-block">
-									<h3 class="filter-item-main">Дополнительно</h3>
-									<label class="filter-item filter-checkbox">
-										<input type="checkbox" class="checkbox" name="order" value="1">
-										<span class="filter-content">Новое</span>
-									</label>
-									<label class="filter-item filter-checkbox">
-										<input type="checkbox" class="checkbox" name="order" value="2" checked>
-										<span class="filter-content">Акции</span>
-									</label>
-								</div>
-								<div class="filter-block">
-									<a href="#" class="btn btn-main">
-										Применить
-									</a>
+								<div class="col-lg-12">
+									<div class="product-content">
+										<h3 class="block-name">Описание</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus totam laborum officiis voluptates error minima numquam at rem sapiente earum, sed recusandae eaque, consequatur iste omnis magnam atque architecto, cupiditate facere. Impedit, nulla quia quae, blanditiis sed, inventore rerum a ab alias ratione aspernatur! Quas, repudiandae assumenda temporibus explicabo consectetur.</p>
+									</div>
 								</div>
 							</div>
-						</form>
-					</aside>
-				</div>
-			</div>
-			<!-- End Filter -->
-			<!-- Message -->
-			<div class="col-lg-9 mobil-block-nopadding">
-				<div class="alert alert-warning alert-dismissible fade show message" role="alert">
-				  <strong>Сообщение!</strong> Клубника появится 4 августа 2020 года.
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				    <span aria-hidden="true">&times;</span>
-				  </button>
-				</div>
-			</div>
-			<!-- End Message -->
-			<!-- Filter Mobil -->
-			<div class="col-md-12 filter-mobil">
-			  <aside class="dropdown filter">
-			  	<a class="dropdown-toggle btn btn-main" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-				Фильтры
-				</a>
-				<form class="dropdown-menu">
-					<div class="flex-column">
-						<div class="filter-block">
-							<h3 href="#" class="filter-item-main">
-								Наличие в магазинах
-							</h3>
-							<label class="filter-item filter-radio">
-								<input type="radio" class="radio" name="presence" value="1">
-								<span class="filter-content">В наличии</span>
-							</label>
-							<label class="filter-item filter-radio">
-								<input type="radio" class="radio" name="presence" value="2" checked>
-								<span class="filter-content">В наличии и отсутствующие</span>
-							</label>
-						</div>
-						<div class="filter-block">
-							<h3 class="filter-item-main">Сортировать по цене</h3>
-							<label class="filter-item filter-radio">
-								<input type="radio" class="radio" name="order" value="1">
-								<span class="filter-content">По возрастанию цены</span>
-							</label>
-							<label class="filter-item filter-radio">
-								<input type="radio" class="radio" name="order" value="2" checked>
-								<span class="filter-content">По убыванию цены</span>
-							</label>
-						</div>
-						<div class="filter-block">
-							<h3 class="filter-item-main">Цена</h3>
-							<div class="filter-item">
-								<input type="text" class="price form-control" name="fromPrice" placeholder="От 500">
-								<input type="text" class="price form-control" name="upPrice" placeholder="До 10000">
-							</div>
-						</div>
-						<div class="filter-block">
-							<h3 class="filter-item-main">Дополнительно</h3>
-							<label class="filter-item filter-checkbox">
-								<input type="checkbox" class="checkbox" name="order" value="1">
-								<span class="filter-content">Новые</span>
-							</label>
-							<label class="filter-item filter-checkbox">
-								<input type="checkbox" class="checkbox" name="order" value="2" checked>
-								<span class="filter-content">Акции</span>
-							</label>
-						</div>
-						<div class="filter-block">
-							<a href="#" class="btn btn-main">
-								Применить
-							</a>
-						</div>
-					</div>
-				</form>
-			</aside>
-			</div>
-			<!-- End Filter Mobil -->
-			<div class="col-lg-9 offset-lg-3 col-md-12 mobil-block-nopadding">
-
-			<div class="row block-right mobil-block-nomargin">	
-
-				<div class="col-lg-12 col-md-12 mobil-block-nopadding">
-					<h2 class="block-name">Декоративные растения</h2>
-				</div>
-			
-
-				<div class="col-lg-12 col-md-12 mobil-block-nopadding">
-					<div class="block">
-						<div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>1500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>	
-			
-
-		</div>
+						</div>	
 					
+
+					</div>
+						
+				</div>
 			</div>
-		</div>
 
-	
+			<div class="similar">
+					
+				<div class="col-lg-12 mobil-block-nopadding">
+					<h2 class="block-name-slaider"><a href="/category.html">Похожие растения</a></h2>
 
-		<div class="row continuation-block">	
+				<div class="slaide">
+					<div class="prev-2 arrow-slide"><svg width="50" height="50" viewBox="0 0 16 16" class="bi bi-arrow-left-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.354 10.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z"/></svg></div>
 
-			<div class="col-lg-12 mobil-block-nopadding">
-					<div class="block">
-						<div class="card card-new block-list-line">
+					<div class="next-2 arrow-slide"><svg width="50" height="50" viewBox="0 0 16 16" class="bi bi-arrow-right-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm5.646 10.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/></svg></div>
+
+					<div class="block block-plants slaider-plants-2">
+						<div class="card card-carousel">
 						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
 						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>1500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
-						    <span class="card-price"><p>500 р.</p></span>
-						    <div class="card-icons">
-						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
-						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
-						    </div>
-						  </div>
-						</div><div class="card card-new block-list-line">
-						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
-						  <div class="card-body">
-						    <h5 class="card-title"><a href="/product.html">Название карточки</a></h5>
+						    <h5 class="card-title"><a href="/product.html">Название карточки<</h5>
 						    <span class="card-price"><p>500 р.</p></span>
 						    <div class="card-icons">
 						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
@@ -625,13 +396,53 @@
 						    </div>
 						  </div>
 						</div>
-						<button type="button" class="btn btn-main btn-main-large btn-yet">Показать ещё</button>	
+						<div class="card card-carousel">
+						  <a href="/product.html"><img class="card-img-top" src="img/2.jpg" alt="Card image cap"></a>
+						  <div class="card-body">
+						    <h5 class="card-title"><a href="/product.html">Название карточки<</h5>
+						    <span class="card-price"><p>500 р.</p></span>
+						    <div class="card-icons">
+						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
+						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
+						    </div>
+						  </div>
+						</div><div class="card card-carousel">
+						  <a href="/product.html"><img class="card-img-top" src="img/3.jpg" alt="Card image cap"></a>
+						  <div class="card-body">
+						    <h5 class="card-title"><a href="/product.html">Название карточки<</h5>
+						    <span class="card-price"><p>500 р.</p></span>
+						    <div class="card-icons">
+						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
+						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
+						    </div>
+						  </div>
+						</div><div class="card card-carousel">
+						  <a href="/product.html"><img class="card-img-top" src="img/2.jpg" alt="Card image cap"></a>
+						  <div class="card-body">
+						    <h5 class="card-title"><a href="/product.html">Название карточки<</h5>
+						    <span class="card-price"><p>500 р.</p></span>
+						    <div class="card-icons">
+						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
+						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
+						    </div>
+						  </div>
+						</div><div class="card card-carousel">
+						  <a href="/product.html"><img class="card-img-top" src="img/1.jpg" alt="Card image cap"></a>
+						  <div class="card-body">
+						    <h5 class="card-title"><a href="/product.html">Название карточки<</h5>
+						    <span class="card-price"><p>500 р.</p></span>
+						    <div class="card-icons">
+						    	<span class="card-icon"><a href="#"><svg width="18px" height="18px" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/></svg></a></span>
+						    	<span class="card-icon"><a class="active" href="#"><svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0v-2z"/><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a></span>
+						    </div>
+						  </div>
+						</div>
 					</div>
-				</div>	
+				</div>
+				</div>
 
-			
+			</div>
 
-		</div>
 		<!-- End block list -->
 		</div>
 		

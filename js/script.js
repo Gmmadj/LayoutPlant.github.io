@@ -59,3 +59,19 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop:0},800);
   });
 });
+
+var numCount = document.getElementById('num_count');
+var plusBtn = document.getElementById('btn_plus');
+var minusBtn = document.getElementById('btn_minus');
+plusBtn.onclick = function() {
+  var qty = parseInt(numCount.value);
+  qty = qty + 1;
+  numCount.value = qty;
+}
+minusBtn.onclick = function() {
+  var qty = parseInt(numCount.value);
+  if (qty > 1) {
+    qty = qty - 1;
+    numCount.value = qty;
+  }
+}
