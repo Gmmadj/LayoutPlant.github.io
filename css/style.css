@@ -428,23 +428,24 @@ input:hover{
 	font-weight: 600;
 	margin-bottom: 15px;
 }
-.filter .filter-radio {
-	 position: relative;
+.filter-radio {
+	display: block;
+	position: relative;
 }
-.filter .filter-content {
+.filter-content {
 	padding-left: 22px;
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
 }
-.filter .filter-radio .radio {
+.filter-radio .radio {
 	-webkit-appearance: none;/* Chrome */
     -moz-appearance: none;/* Firefox */
     appearance: none;/* убираем стандартные кружочки */
     position: absolute;
 
 }
-.filter .filter-radio .filter-content::before {
+.filter-radio .filter-content::before {
 	content: "";
     display: block; 
     width: 18px; 
@@ -458,7 +459,7 @@ input:hover{
     z-index: 1; 
     transition: border .1s linear;
 }
-.filter .filter-radio .filter-content::after {
+.filter-radio .filter-content::after {
 	content: "";
     display: block;
     width: 8px;
@@ -473,11 +474,11 @@ input:hover{
     transition: opacity .1s linear; 
 
 }
-.filter .filter-radio .radio:checked + .filter-content::before {
+.filter-radio .radio:checked + .filter-content::before {
 	border-color: #90b145;
 	background-color: #90b145;
 }
-.filter .filter-radio .radio:checked + .filter-content::after {
+.filter-radio .radio:checked + .filter-content::after {
 	opacity: 1;
 }
 .filter .price {
@@ -681,6 +682,13 @@ input:hover{
 /* End Personal area */
 
 /* Separate item */
+.separate-name {
+	text-align: center;
+	padding-left: 0;
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
 .separate-item {
 	margin-bottom: 20px;
 }
@@ -711,10 +719,14 @@ input:hover{
 .separate-right {
 	margin-left: 10px;
 }
-.separate-right .info{
+.separate-right .info-name{
 	font-size: 18px;
 	font-weight: 600;
 	border-bottom: 3px solid #8AB32D;
+}
+.separate-right .info-content{
+	font-size: 16px;
+	font-weight: 500;
 	margin-bottom: 50px;
 }
 .separate-right .btn-basket{
@@ -723,6 +735,30 @@ input:hover{
 }
 /* End Separate item */
 
+/* Ordering */
+
+.ordering-radio {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ordering .form-group {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* End Ordering */
+
+.page-content p{
+	font-size: 16px;
+}
+
+/* Map */
+.map iframe{
+	margin-top: 20px;
+	width: 100%;
+	height: 50vh;
+}
+/* End Map */
 /*
  *	Block plants
  */ 
@@ -876,6 +912,17 @@ input:hover{
 	object-fit: cover;
 }
 
+/* Knowledge */
+.knowledge .card-new {
+	width: calc((100% - 40px) / 2);
+	margin: 0 10px 25px 10px;
+}
+.knowledge-column {
+	position: relative; 
+	margin-left: 0;
+}
+/* End Knowledge */
+
 /*
  *	Btn
  */
@@ -995,7 +1042,10 @@ input:hover{
 /* ============= Media 996 ============= */
 
 @media (max-width: 992px) {
-
+	.mobil-block-nomargin {
+		margin-right: 0;
+		margin-left: 0;
+	}
 /* _____________ Header _____________*/
 
 	.header-area {
@@ -1042,6 +1092,9 @@ input:hover{
 	}
 	.filter-mobil .btn-main {
 		width: 100%;
+	}
+	.separate-right {
+		margin-left: 0;
 	}
 	.separate-item .item-img {
 		width: 180px;
@@ -1092,6 +1145,10 @@ input:hover{
 /* ============= Media 768 ============= */
 
 @media (max-width: 768px) {
+	.mobil-block-nopadding {
+		padding-right: 0;
+		padding-left: 0;
+	}
 	.card-new, .block-right .card-new {
 		width: calc((100% - 60px) / 3);
 		margin: 0 10px 15px 10px;
@@ -1166,14 +1223,6 @@ input:hover{
 	.card-news {
 		width: 350px;
 	}
-	.mobil-block-nopadding {
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.mobil-block-nomargin {
-		margin-right: 0;
-		margin-left: 0;
-	}
 	.product-img {
 		width: 100%;
 		height: 300px;
@@ -1201,6 +1250,7 @@ input:hover{
 	}
 	.separate-item .item-amount {
 		margin-top: 10px;
+		margin-left: 20px;
 	}
 
 }
@@ -1244,6 +1294,7 @@ input:hover{
 	}
 	.separate-item .item-amount {
 		margin-top: 0;
+		margin-left: 10px;
 	}
 }
 

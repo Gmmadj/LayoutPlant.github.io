@@ -318,86 +318,72 @@
 			<div class="container-lg">
 				<div class="row continuation-block">
 					<div class="col-lg-12 col-md-12 mobil-block-nopadding">
-						<h2 class="separate-name">Корзина</h2>
+						<h2 class="separate-name">Оформление заказа</h2>
 					</div>
 
 					<div class="col-lg-8 block">
-						<div class="basket-product separate-item">	
+						<div class="separate-item ordering">	
 							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
+								<div class="col-md-12">
+									<h3 class="item-name">Укажите способ получения товара:</h3>
 								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
+								<div class="col-md-12">
+									<div class="ordering-radio">
+										<label class="filter-item filter-radio">
+											<input type="radio" class="radio" name="presence" value="1">
+											<span class="filter-content">Самовывоз из питомника</span>
+										</label>
+										<label class="filter-item filter-radio">
+											<input type="radio" class="radio" name="presence" value="2" checked>
+											<span class="filter-content">Доставка</span>
+										</label>
+										<input type="text" class="form-control form-input-new" placeholder="Калужская обл. г. Кондрово, ул. Союзная, дом 54" 	disabled>
 									</div>
 								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
+								<div class="col-md-12">
+									<h3 class="item-name">Контактная информация:</h3>
 								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
+								<div class="col-md-12">
+									<div class="form-group">
+								    <label for="exampleInput1">Имя и Фамилия</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput1" name="name" placeholder="Татьяна Ершова" disabled>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput2">Email</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput2" name="email" placeholder="main@mail.com" disabled>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput3">Номер телефона</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput3" name="modil" placeholder="7 980 000 00 00" disabled>
+								  </div>
 								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
+								<div class="col-md-12">
+									<h3 class="item-name">Способ оплаты:</h3>
+								</div>
+								<div class="col-md-12">
+									<div class="ordering-radio">
+										<label class="filter-item filter-radio">
+											<input type="radio" class="radio" name="presence" value="1">
+											<span class="filter-content">Оналайн</span>
+										</label>
+										<label class="filter-item filter-radio">
+											<input type="radio" class="radio" name="presence" value="2" checked>
+											<span class="filter-content">При получении</span>
+										</label>
 									</div>
 								</div>
 							</div>
-						</div>			
-						<div class="basket-product separate-item">	
-							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
-									</div>
-								</div>
-							</div>
-						</div>				
+						</div>							
+			
 					</div>
 
 					<div class="col-lg-3 offset-lg-1 block mobil-block-nomargin">
 						<div class="product-basket separate-right">
-							<p class="info-name">Итого:</p>
-							<p class="info-content">2 товара на 1000 р</p>
-							<a href="/LayoutPlant.github.io/ordering.html" class="btn btn-main btn-basket">Оформить заказ</a>
-							<a href="/LayoutPlant.github.io/index.html" class="btn btn-main btn-basket">Продолжить покупку</a>
+							<p class="info-name">Ваш заказ</p>
+							<p class="info-content"><b>Состав:</b> 2 товара на 1000 р<br><b>Способ получения:</b> доставка<br><b>Доставка:</b> 2000 р</p>
+							<p class="info-name">Итого к оплате:</p>
+							<p class="info-content"><b style="font-size: 18px">3000 р</b></p>
+							<a href="#" class="btn btn-main btn-basket">Заказать</a>
 						</div>
 					</div>
 				</div>

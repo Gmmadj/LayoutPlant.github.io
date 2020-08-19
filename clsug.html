@@ -78,7 +78,7 @@
 	
 	<div class="wrapper">
 		
-		<!-- Header -->
+			<!-- Header -->
 		<header class="header">
 			<!-- Header top mobil-->
 			<div class="header-top-mobil mobil-block">
@@ -292,18 +292,19 @@
 						</div>	
 						<!-- End Search -->
 						<!-- Btn top -->
-						<div class="col-lg-5 no-mobil">
+						<div class="col-lg-4 no-mobil">
 							<a href="/LayoutPlant.github.io/favorites.html" type="button" class="btn btn-top btn-icon-top">
 								<span class="icon-button"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg></span>
 							Избранное</a>
 							<a href="/LayoutPlant.github.io/basket.html" type="button" class="btn btn-top btn-icon-top">
 								<span class="icon-button"><svg width="17px" height="17px" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></span>
 							<span>Корзина</span></a>
-							<div class="login" style="float: right;">
-								<a href="/LayoutPlant.github.io/entry.html" type="button" class="btn btn-main btn-top">Личный кабинет</a>
+						</div>
+						<div class="col-lg-1 no-mobil">
+							<div class="login">
+								<a href="/LayoutPlant.github.io/entry.html" type="button" class="btn btn-main btn-top">Войти</a>
 							</div>
 						</div>
-						
 						<!-- End Btn top -->
 					</div> <!-- Row -->
 				</div> <!-- Container -->
@@ -316,91 +317,53 @@
 		<main class="main">
 
 			<div class="container-lg">
-				<div class="row continuation-block">
-					<div class="col-lg-12 col-md-12 mobil-block-nopadding">
-						<h2 class="separate-name">Корзина</h2>
-					</div>
 
-					<div class="col-lg-8 block">
-						<div class="basket-product separate-item">	
-							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
-									</div>
-								</div>
-							</div>
-						</div>			
-						<div class="basket-product separate-item">	
-							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
+			<div class="row continuation-block">	
+				<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+					<h2 class="separate-name">Притензии и Предложения</h2>
+				</div>
+				<div class="col-lg-12 mobil-block-nopadding">
+					<div class="block page-content">
+						
 
-					<div class="col-lg-3 offset-lg-1 block mobil-block-nomargin">
-						<div class="product-basket separate-right">
-							<p class="info-name">Итого:</p>
-							<p class="info-content">2 товара на 1000 р</p>
-							<a href="/LayoutPlant.github.io/ordering.html" class="btn btn-main btn-basket">Оформить заказ</a>
-							<a href="/LayoutPlant.github.io/index.html" class="btn btn-main btn-basket">Продолжить покупку</a>
-						</div>
+						<p>Уважаемые, покупатели!</p>
+
+						<p>Благодарю Вас за выбор, сделанный в пользу нашего питомника. Мы стараемся очень тщательно относится к своей работе и делать так, чтобы наши растения легко приживались.</p>
+
+						<p><strong>Если у Вас случилась проблема, вы недовольны качеством материала или обслуживания, прошу Вас писать здесь или на почту timacad@list.ru с пометкой «Претензия».</strong></p>
+
+						<p><strong>Для того, чтобы мы смогли оперативно решить проблему, необходимо указывать номер заказа и фото растений.</strong></p>
+
+						<p>зав.опытным полем</p>
+
+						<p><i>Сергей Верхоламочкин</i></p>
+
+					</div>
+				</div>		
+				<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+					<h2 class="separate-name" style="margin-top: 50px;">Форма связи</h2>
+				</div>
+				<div class="col-lg-12 mobil-block-nopadding">
+					<div class="block page-comment">
+						<form>
+						   <div class="form-group">
+						    <label for="exampleFormControlInput1">Имя и Фамилия</label>
+						    <input type="text" class="form-control form-input-new" id="exampleFormControlInput1">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlInput2">Email адрес</label>
+						    <input type="email" class="form-control form-input-new" id="exampleFormControlInput2" placeholder="name@example.com">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleFormControlTextarea1">Притензия или Предложение</label>
+						    <textarea class="form-control form-input-new" id="exampleFormControlTextarea1" rows="5"></textarea>
+						  </div>
+						  <button type="submit" class="btn btn-main">Отправить</button>
+						</form>
 					</div>
 				</div>
+
+			</div>
 			<!-- End block list -->
 			</div>
 			

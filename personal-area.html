@@ -318,87 +318,63 @@
 			<div class="container-lg">
 				<div class="row continuation-block">
 					<div class="col-lg-12 col-md-12 mobil-block-nopadding">
-						<h2 class="separate-name">Корзина</h2>
-					</div>
-
-					<div class="col-lg-8 block">
-						<div class="basket-product separate-item">	
-							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
-									</div>
-								</div>
-							</div>
-						</div>			
-						<div class="basket-product separate-item">	
-							<div class="row mobil-block-nomargin">
-								<div class="col-md-3 col-sm-4 col-6">
-									<img class="item-img" src="/img/1.jpg" alt="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-6">
-									<h3 class="item-name">Название продукта</h3>
-									<div class="links-special no-mobil-400">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-7 offset-5 mobil-400">
-									<div class="links-special">
-										<a href="#">В избранное</a>
-										<a href="#">Удалить</a>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-4 col-6">
-									<div class="item-amount">
-										<div class="input-group">
-										  <input class="btn-amount" type="button" value="-" id="btn_minus">
-										  <input class="number-amount" type="text" step="1" min="1" max="10000" id="num_count" name="amount" value="1" title="Qty">
-										  <input class="btn-amount" type="button" value="+" id="btn_plus">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-8 col-6">
-									<div class="item-price">
-										<p>500 р</p>
-									</div>
-								</div>
-							</div>
-						</div>				
-					</div>
-
-					<div class="col-lg-3 offset-lg-1 block mobil-block-nomargin">
-						<div class="product-basket separate-right">
-							<p class="info-name">Итого:</p>
-							<p class="info-content">2 товара на 1000 р</p>
-							<a href="/LayoutPlant.github.io/ordering.html" class="btn btn-main btn-basket">Оформить заказ</a>
-							<a href="/LayoutPlant.github.io/index.html" class="btn btn-main btn-basket">Продолжить покупку</a>
+						<div class="col-lg-12 col-md-12 mobil-block-nopadding">
+							<h2 class="separate-name" style="text-align: center;">Личный кабинет</h2>
 						</div>
+
+						<div class="row block mobil-block-nomargin">
+
+							<div class="person-dropdown">
+								<input type="checkbox" id="person-hd-1" class="hide"/>
+	   							<label class="main-label" for="person-hd-1" ><p>Заказы</p><span class="icon-label"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg></span></label>
+								
+								<ul class="nav dropblock">
+								  <li class="nav-item">
+								    <a class="nav-link" href="/LayoutPlant.github.io/one-order.html">Заказ № 1230 от 27.04.20</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="/LayoutPlant.github.io/one-order.html">Заказ № 1000 от 27.04.19</a>
+								  </li>
+								</ul>
+							</div>	
+
+
+							<div class="person-dropdown">
+								<input type="checkbox" id="person-hd-2" class="hide" checked />
+	   							<label class="main-label" for="person-hd-2" ><p>Личные данные</p><span class="icon-label"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg></span></label>
+								
+								<form class="dropblock">
+								  <div class="form-group">
+								    <label for="exampleInput1">Имя и Фамилия</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput1" name="email">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput2">Email</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput2" name="email">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput3">Номер телефона</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput3" name="email">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput4">Адрес</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput4" name="email" >
+								    <small id="addressHelp" class="form-text text-muted"><strong>Пример:</strong> Область, Район, Населённый пункт, Название улицы, номер дома</small>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput5">Почтовый индекс</label>
+								    <input type="email" class="form-control form-input-new" id="exampleInput5" name="email">
+								    <small id="indexHelp" class="form-text text-muted">Здесь вы можете узнать индекс: <a href="https://www.pochta.ru/post-index" target="_blank">Узнать</a></small>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInput6">Пароль</label>
+								    <input type="text" class="form-control form-input-new" id="exampleInput6" name="password">
+								  </div>
+								  <button type="submit" class="btn btn-main">Применить изменения</button>
+								</form>
+							</div>	
+						</div>
+
 					</div>
 				</div>
 			<!-- End block list -->
